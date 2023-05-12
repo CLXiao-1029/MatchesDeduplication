@@ -1,0 +1,20 @@
+﻿<Window x:Class="ChineseMatches.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ChineseMatches"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="540" ResizeMode="NoResize">
+    <Grid>
+        <Label Content="需要去重的文本" HorizontalAlignment="Left" Margin="10,4,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="_Text_Box" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Width="360" RenderTransformOrigin="0.5,0.5" Height="200" Margin="10,29,0,0" AcceptsReturn="True"/>
+        <Button x:Name="_Btn_QuChong" Content="去重" HorizontalAlignment="Left" Margin="400,260,0,0" VerticalAlignment="Top" Height="45" Width="100" Click="_Btn_QuChong_Click"/>
+        <Button x:Name="_Btn_Save" Content="保存" HorizontalAlignment="Left" Margin="400,350,0,0" VerticalAlignment="Top" Height="45" Width="100" Click="_Btn_Save_Click"/>
+        <Label Content="正则表达式" HorizontalAlignment="Left" Margin="380,17,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="_Text_Pattern" HorizontalAlignment="Left" Margin="380,42,0,0" TextWrapping="Wrap" Text="[\u4e00-\u9fa5]" VerticalAlignment="Top" Width="120"/>
+        <Label Content="去重结果" HorizontalAlignment="Left" Margin="10,236,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="_Text_Box_Copy" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Width="360" RenderTransformOrigin="0.5,0.5" Height="140" Margin="10,261,0,0" AcceptsReturn="True"/>
+
+    </Grid>
+</Window>
