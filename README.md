@@ -1,5 +1,6 @@
 # MatchesDeduplication 文本去重
 1. 匹配中文
+
 `[\u4e00-\u9fa5]`
 1.1 匹配中文标点符号
 `[\u3002\uff0c\uff1b\uff1a\u201c\u201d\uff08\uff09\u3001\uff0e]`
